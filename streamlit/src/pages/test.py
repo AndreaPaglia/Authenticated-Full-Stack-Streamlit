@@ -2,9 +2,6 @@ import requests
 import json
 
 import streamlit as st
-import pandas as pd
-
-from config import API_URL
 
 PAGE_TITLE = 'Test Page'
 

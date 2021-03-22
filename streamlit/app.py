@@ -4,17 +4,13 @@ import pandas as pd
 # ast credit to https://github.com/MarcSkovMadsen/awesome-streamlit
 import awesome_streamlit as ast
 import src.pages.create
-import src.pages.read
-import src.pages.update
-import src.pages.delete
+import src.pages.test
 
 # ast.core.services.other.set_logging_format()
 
 PAGES = {
     'Create': src.pages.create,
-    'Read': src.pages.read,
-    'Update': src.pages.update,
-    'Delete': src.pages.delete
+    'Test': src.pages.test
 }
 
 def main():
