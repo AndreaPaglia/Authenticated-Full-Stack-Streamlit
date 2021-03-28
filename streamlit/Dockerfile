@@ -8,8 +8,6 @@ COPY . /streamlit
 
 # Intentionally do not expose port 8501 or else people can circumvent login
 
-RUN pip install pipenv
-COPY Pipfile Pipfile.lock /streamlit/
-RUN pipenv install --system --dev
+RUN pip install -r requirements.txt
 
 CMD streamlit run app.py
